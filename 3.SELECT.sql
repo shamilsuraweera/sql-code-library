@@ -6,22 +6,22 @@
 
 /* 1. Select all columns */
 SELECT *
-FROM parks_and_recreation.employee_demographics;
+FROM Parks_and_Recreation.employee_demographics;
 
 
 /* 2. Select a specific column */
 SELECT first_name
-FROM employee_demographics;
+FROM Parks_and_Recreation.employee_demographics;
 
 
 /* 3. Select multiple specific columns */
 SELECT first_name, last_name
-FROM employee_demographics;
+FROM Parks_and_Recreation.employee_demographics;
 
 
 /* 4. Column order can vary (order usually doesn't matter) */
 SELECT last_name, first_name, gender, age
-FROM employee_demographics;
+FROM Parks_and_Recreation.employee_demographics;
 
 
 /* 5. Multi-line formatting for readability */
