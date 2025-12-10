@@ -10,7 +10,6 @@ required tables.
 -- Step 1: Create a MySQL User
 -- NOTE: This command's success depends on your MySQL environment and privileges.
 CREATE USER 'shamil_suraweera'@'localhost'
-IDENTIFIED WITH mysql_native_password
 BY 'ShamWeer@MySQL0'
 ;
 

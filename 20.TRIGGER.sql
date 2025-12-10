@@ -18,7 +18,7 @@ DELETE) occurs on a specific table.
    into the 'employee_salary' table.
    ------------------------------------------------------------ */
 
-USE parks_and_recreation;
+USE Parks_and_Recreation;
 DROP TRIGGER IF EXISTS `employee_insert_log`; -- Clean up if the trigger exists
 
 DELIMITER $$

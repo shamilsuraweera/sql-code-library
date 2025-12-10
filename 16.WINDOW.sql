@@ -83,13 +83,8 @@ SELECT
     dem.first_name, 
     dem.gender, 
     sal.salary,
-    -- ROW_NUMBER: Assigns a unique, sequential integer to each row (1, 2, 3...)
     ROW_NUMBER() OVER(PARTITION BY dem.gender ORDER BY sal.salary DESC) AS Row_Num,
-    
-    -- RANK: Assigns the same rank to ties, then skips the next rank numbers (1, 2, 2, 4...)
     RANK() OVER(PARTITION BY dem.gender ORDER BY sal.salary DESC) AS Rank_1,
-    
-    -- DENSE_RANK: Assigns the same rank to ties, but does NOT skip rank numbers (1, 2, 2, 3...)
     DENSE_RANK() OVER(PARTITION BY dem.gender ORDER BY sal.salary DESC) AS Dense_Rank_2
 FROM employee_demographics dem
 JOIN employee_salary sal

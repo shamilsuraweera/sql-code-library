@@ -29,7 +29,7 @@ SHOW EVENTS;
    from the demographics table, executing every 30 seconds for testing.
    ------------------------------------------------------------ */
 
-USE parks_and_recreation;
+USE Parks_and_Recreation;
 -- Drop the event if it already exists to allow re-creation
 DROP EVENT IF EXISTS delete_retirees;
 
@@ -58,7 +58,7 @@ DELIMITER ;
 
 -- Check the contents of the demographics table (Jerry should be gone after the event runs)
 SELECT *
-FROM parks_and_recreation.employee_demographics;
+FROM Parks_and_Recreation.employee_demographics;
 
 
 /* ------------------------------------------------------------

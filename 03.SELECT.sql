@@ -40,15 +40,7 @@ FROM employee_demographics;
    Division, Addition, Subtraction) for order of operations.
    ============================================================ */
 
--- Example 1: Simple addition
-SELECT 
-    first_name,
-    last_name,
-    total_money_spent,
-    total_money_spent + 100 AS adjusted_spent
-FROM customers;
-
--- Example 2: Salary arithmetic
+-- Example 1: Salary arithmetic
 SELECT 
     first_name, 
     last_name,
@@ -56,7 +48,7 @@ SELECT
     salary + 100 AS salary_plus_100
 FROM employee_salary;
 
--- Example 3: Using parentheses to change order of operations
+-- Example 2: Using parentheses to change order of operations
 SELECT 
     first_name, 
     last_name,
@@ -71,11 +63,11 @@ FROM employee_salary;
    ============================================================ */
 
 -- Without DISTINCT (duplicates may appear)
-SELECT department_id
+SELECT employee_id
 FROM employee_salary;
 
 -- With DISTINCT (unique values only)
-SELECT DISTINCT department_id
+SELECT DISTINCT employee_id
 FROM employee_salary;
 
 

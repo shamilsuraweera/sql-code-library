@@ -32,7 +32,7 @@ CALL large_salaries_simple();
    ------------------------------------------------------------ */
 
 -- First, ensure we are in the correct database and drop if exists for clean re-creation
-USE `parks_and_recreation`;
+USE `Parks_and_Recreation`;
 DROP PROCEDURE IF EXISTS `large_salaries_complex`;
 
 -- Change the delimiter to allow BEGIN/END block to be treated as one statement
@@ -66,7 +66,7 @@ CALL large_salaries_complex();
    Allows dynamic input from the user when calling the procedure.
    ------------------------------------------------------------ */
 
-USE `parks_and_recreation`;
+USE `Parks_and_Recreation`;
 DROP PROCEDURE IF EXISTS `salaries_by_employee`;
 
 DELIMITER $$

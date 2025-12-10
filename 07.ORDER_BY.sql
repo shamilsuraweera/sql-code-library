@@ -12,14 +12,14 @@
 SELECT 
     *
 FROM 
-    customers;
+    employee_demographics;
 
 
 /* 2. Order by a single column (ascending by default) */
 SELECT 
     *
 FROM 
-    customers
+    employee_demographics
 ORDER BY 
     first_name;
 /* → Sorted A to Z (ascending order) */
